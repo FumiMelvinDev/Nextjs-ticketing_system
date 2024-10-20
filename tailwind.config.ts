@@ -13,7 +13,10 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    daisyui: {
+      themes: ["light", "dark", "cupcake"],
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;
