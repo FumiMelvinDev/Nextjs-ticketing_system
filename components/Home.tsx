@@ -2,6 +2,8 @@ import { IoMenu } from "react-icons/io5";
 import { RxDashboard } from "react-icons/rx";
 import { LuTicket, LuUsers, LuUser } from "react-icons/lu";
 import Navbar from "./Navbar";
+import Tickets from "./Tickets";
+import CreateTicket from "./CreateTicket";
 
 const Home = () => {
   return (
@@ -13,6 +15,15 @@ const Home = () => {
             <IoMenu className="text-3xl" />
           </label>
           <Navbar />
+        </div>
+        <div className="grid grid-cols-3 gap-4">
+          <div className="col-span-2">
+            <Tickets />
+          </div>
+
+          <div>
+            <CreateTicket />
+          </div>
         </div>
       </div>
       <div className="drawer-side">

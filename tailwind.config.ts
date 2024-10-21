@@ -17,6 +17,6 @@ const config: Config = {
       themes: ["light", "dark", "cupcake"],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/forms")],
 };
 export default config;
